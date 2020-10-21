@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- Demension for home page top recommend image view -->
+
+    <!-- Dimension for loading drawable -->
+
+    <!-- 字体大小 -->
+
+    <dimen name="sp_small">14sp</dimen>
+    <dimen name="sp_common">16sp</dimen>
+
+    <dimen name="title_height">48dp</dimen>
+
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp15">15dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    /**********************圆形Progress****************************/
+    <!--圆形progress外圆宽度-->
+    /**********************textView****************************/
+    <!---->
+    <!--toolbar-->
+    <!--标题-->
+    <!--行标题、正文-->
+    <!--提示小标题-->
+    <dimen name="text_h6">16sp</dimen>
+    /**********************CardView****************************/
+    <!--卡片间距 -->
+    <!--卡片间距 -->
+    <!--卡片浮动高度-->
+    <!--内容距离边框距离-->
+    /**********************Padding****************************/
+    <!--item常规padding -->
+    <!--常规padding -->
+    <dimen name="padding_margin">8dp</dimen>
+    <!--控件间的padding -->
+    <!--头像边距-->
+    /**********************Button****************************/
+    <!--Button大小 -->
+    /**********************Shape****************************/
+    <!--shape圆角大小-->
+    <!--shape描边宽度-->
+    /***************dialog控件***************/
+    <!--dialog圆角-->
+    <dimen name="radius_svprogresshuddefault">25px</dimen>
+    /**********************Alpha值****************************/
+    /**********************分割线高度****************************/
+</resources>

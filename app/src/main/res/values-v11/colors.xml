@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--toolbar背景色-->
+    <!--actionBar背景色-->
+    <!--button、checkBox、editText下划线，seekBar-->
+    <!--activity/fragment背景色-->
+    <color name="bg">#f0f1f3</color>
+    <!--分割线的颜色-->
+    <!--字体颜色：白色，toolbar颜色、button颜色-->
+    <!--字体颜色：浅黑色，标题颜色、内容颜色-->
+    <!--字体颜色：灰色，editText提示文字颜色-->
+    <!--字体颜色：灰色，textView颜色-->
+    <!--字体颜色：灰色，textView颜色-->
+    <!--字体颜色：灰色，textView颜色-->
+    <!--字体颜色：橘色，textView提示字体颜色-->
+    <!--button颜色：红色，错误信息提示-->
+    <color name="color_button_red">#e60012</color>
+    <!--button颜色：灰色，已经处理-->
+    <!--字体颜色：灰色，历史记录-->
+    <!--字体颜色：绿色，驾驶员标注颜色-->
+    <!--textView背景颜色：浅蓝-->
+    <!--Icon背景颜色：灰色-->
+    <!--透明色-->
+    <color name="transparent">#00000000</color>
+    <!--图片背景色-->
+    <!--搜索按钮字体颜色-->
+
+    <!--notification字体颜色-->
+    <color name="gray">#ff333333</color>
+    <!--蓝色butoon点击效果-->
+</resources>

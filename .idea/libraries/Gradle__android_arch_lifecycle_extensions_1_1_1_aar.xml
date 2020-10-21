@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: android.arch.lifecycle:extensions:1.1.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/a975b686f0f737c8fc514b97abefb0be/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a87fab1db1f9b95a52ba8059005c203f/extensions-1.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6430fe3f4b2dc0952c5d350584be0631/extensions-1.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1691270c520cbdbed67798fefdc0cd42/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1691270c520cbdbed67798fefdc0cd42/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1691270c520cbdbed67798fefdc0cd42/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/extensions/1.1.1/d654e6aa2f4a7c33f2dfe6c8465ee9ad2a81c1aa/extensions-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

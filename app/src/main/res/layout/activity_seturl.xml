@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.acc.common.widget.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title_bar_color"/>
+
+    <TextView
+        style="@style/tvStyle_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:padding="@dimen/dp_10"
+        android:text="服务器地址:" />
+
+    <EditText
+        android:id="@+id/et_url"
+        style="@style/tvStyle_black"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/et_bg_gray"
+        android:gravity="left" />
+
+    <TextView
+        android:id="@+id/tv_save"
+        style="@style/tvStyle_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp30"
+        android:background="@drawable/btn_bg_orange"
+        android:clickable="true"
+        android:padding="@dimen/dp_10"
+        android:text="保存并退出" />
+
+</LinearLayout>

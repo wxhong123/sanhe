@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+
+ext {
+    isLibrary = true
+    pomArtifactId = "Common"
+    pomDescription = "Common of android picker"
+}
+
+dependencies {
+    api 'com.android.support:support-annotations:26.1.0'
+}
+
+
+android {
+    compileSdkVersion 25
+}

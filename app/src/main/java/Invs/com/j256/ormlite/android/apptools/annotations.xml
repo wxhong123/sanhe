@@ -1,0 +1,6 @@
+<root>
+    <item
+        name='com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper D getDao(java.lang.Class&lt;T&gt;)'>
+        <annotation name='android.support.annotation.Nullable' />
+    </item>
+</root>

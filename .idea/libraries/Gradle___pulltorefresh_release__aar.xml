@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :pulltorefresh-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bf5cd44d1b2b0a715068f6bdd72ed785/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bf5cd44d1b2b0a715068f6bdd72ed785/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bf5cd44d1b2b0a715068f6bdd72ed785/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

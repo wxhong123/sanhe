@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.acc.common.widget.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title_bar_color"></com.acc.common.widget.TitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_signal1" />
+
+                <TextView
+                    style="@style/tvStyle_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:text="在线"
+                    android:textColor="@color/title_bar_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_signal3" />
+
+                <TextView
+                    style="@style/tvStyle_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:text="离线"
+                    android:textColor="@color/title_bar_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/ckb1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:button="@null"
+                android:drawableRight="@drawable/ckb_btn"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/tv_gray"
+                android:text="应用网络好的情况" />
+
+            <RadioButton
+                android:id="@+id/ckb2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:button="@null"
+                android:drawableRight="@drawable/ckb_btn"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/tv_gray"
+                android:text="应用无网络的情况" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>

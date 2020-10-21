@@ -1,0 +1,51 @@
+<resources>
+
+    <!--提示框样式-->
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/drawable_loading_dialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    /**********************button主题****************************/
+
+    /**********************textButton主题****************************/
+
+    /**********************textImageButton主题****************************/
+
+    /**********************imageButton主题****************************/
+
+    /**********************editText主题****************************/
+
+    /**********************checkBox主题****************************/
+
+    /**********************textView主题,模块标题****************************/
+
+    /**********************textView主题,用户名字****************************/
+
+    /**********************textView主题,正文****************************/
+
+    <style name="acc_textView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/padding_margin</item>
+        <item name="android:paddingBottom">@dimen/padding_margin</item>
+        <item name="android:textSize">@dimen/text_h6</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    /**********************cardView主题****************************/
+
+    /**********************spinner****************************/
+
+    /**********************spinner****************************/
+
+    /**********************RecyclerView****************************/
+
+    /**********************imageView样式****************************/
+
+    /**********************switch样式****************************/
+
+</resources>

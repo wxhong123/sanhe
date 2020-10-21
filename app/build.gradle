@@ -1,0 +1,164 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.acc.sanheapp"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 11
+        versionName "v1.1.1"
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi'
+        }
+
+        vectorDrawables.useSupportLibrary = true
+        javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir(['libs'])
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    dataBinding {
+        enabled = true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+
+repositories {
+    flatDir { dirs 'libs' }
+}
+
+dependencies {
+    implementation files('libs/Android_SwingSDK_fat13.jar')
+    implementation files('libs/ormlite-android-4.48.jar')
+    implementation files('libs/ormlite-core-4.48.jar')
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation files('libs\\MPPClientAPI_Common.jar')
+    def room_version = "1.1.1-rc1"
+
+    compile 'io.jsonwebtoken:jjwt:0.9.1'
+    // or, for latest rc, use "1.1.1-rc1"
+    implementation "android.arch.persistence.room:runtime:$room_version"
+    annotationProcessor "android.arch.persistence.room:compiler:$room_version"
+
+    // optional - RxJava support for Room
+    implementation "android.arch.persistence.room:rxjava2:$room_version"
+
+    //SDK
+
+    //    implementation 'com.github.androidxhm:BimoSDK:master-SNAPSHOT'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation(name: 'pulltorefresh-release', ext: 'aar')
+    implementation 'com.qianwen:update-app:3.5.2'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation files('libs/pclient.jar')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha2'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+
+    //图片加载框架https://github.com/square/picasso/releases
+    api 'com.squareup.picasso:picasso:2.71828'
+
+    //https://github.com/alibaba/fastjson/releases
+    api 'com.alibaba:fastjson:1.2.47'
+
+    //相片选择框架https://github.com/donglua/PhotoPicker/releases
+    api 'me.iwf.photopicker:PhotoPicker:0.9.12@aar'
+
+    //图片压缩工具https://github.com/Curzibn/Luban/releases
+    api 'top.zibin:Luban:1.1.7'
+
+    //https://github.com/ReactiveX/RxAndroid
+    api 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+    //https://github.com/ReactiveX/RxJava
+    api 'io.reactivex.rxjava2:rxjava:2.1.14'
+
+    //长按录制视频，点击拍照片https://github.com/CJT2325/CameraView
+    api 'cjt.library.wheel:camera:1.1.9'
+
+    // Retrofit & OkHttp，2.3版本的retrofit包含了OkHttp，所以不用再次导入OkHttp。同时使用了rxjava，所以导入adapter-rxjava。https://github.com/square/retrofit
+    api 'com.squareup.retrofit2:retrofit:2.4.0'
+
+    //使用fastJson转换Bean。https://github.com/ligboy/retrofit-converter-fastjson
+    api 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
+
+    //https://mvnrepository.com/artifact/com.squareup.retrofit2/adapter-rxjava2/2.4.0
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+
+    //Retrofit拦截器.https://mvnrepository.com/artifact/com.squareup.okhttp3/logging-interceptor
+    api 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    //强大的adapter.https://github.com/CymChad/BaseRecyclerViewAdapterHelper/releases
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+
+    //视频播放框架.https://github.com/lipangit/JiaoZiVideoPlayer/releases
+    api 'cn.jzvd:jiaozivideoplayer:6.2.10'
+
+    // Room (use 1.1.0-alpha1 for latest alpha).https://developer.android.google.cn/topic/libraries/architecture/adding-components#room
+    api 'android.arch.persistence.room:runtime:1.0.0'
+
+    // ViewModel and LiveData.https://developer.android.google.cn/topic/libraries/architecture/adding-components#room
+    api 'android.arch.lifecycle:extensions:1.1.1'
+
+    // RxJava support for Room.https://developer.android.google.cn/topic/libraries/architecture/adding-components#room
+    api 'android.arch.persistence.room:rxjava2:1.0.0'
+
+    // ReactiveStreams support for LiveData.https://developer.android.google.cn/topic/libraries/architecture/adding-components#room
+    api 'android.arch.lifecycle:reactivestreams:1.1.1'
+
+    //谷歌常用工具.https://github.com/google/guava
+    api 'com.google.guava:guava:25.1-android'
+
+    //增强型Navigation.https://github.com/Ashok-Varma/BottomNavigation
+    api 'com.ashokvarma.android:bottom-navigation-bar:2.0.4'
+
+    //airbnb展示矢量图片的库，可以播放AE导出的动画。https://github.com/airbnb/lottie-android
+    api 'com.airbnb.android:lottie:2.5.5'
+
+    //视频播放框架.https://github.com/lipangit/JiaoZiVideoPlayer
+    api 'cn.jzvd:jiaozivideoplayer:6.2.10'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    implementation 'com.android.support:exifinterface:27.1.1'
+    implementation files('libs/acc-ocr-lib.jar')
+    implementation 'com.liulishuo.filedownloader:library:1.7.6'
+
+    //时间选择框架
+    implementation project(':Common')
+    implementation project(':WheelPicker')
+    implementation files('libs/AMap_Location_V4.7.0_20190708.jar')
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //三道防线
+    implementation(name: 'sandaofangxian', ext: 'aar')
+}

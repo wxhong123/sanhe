@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: android.arch.lifecycle:reactivestreams:1.1.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/reactivestreams-1.1.1.aar/a8782a72e8cbcd357f5042a20eccc438/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c80909a33b4dd5deb1bc53a23a4a5ef/reactivestreams-1.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/396121455ae5ad2b43380355f0f2cb4a/reactivestreams-1.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f58f4cf6d91d840a725681e48a50f4ac/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f58f4cf6d91d840a725681e48a50f4ac/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f58f4cf6d91d840a725681e48a50f4ac/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/reactivestreams/1.1.1/b6652f612266d373c5c7a8216663f5a15ee7650f/reactivestreams-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

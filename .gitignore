@@ -1,0 +1,8 @@
+# Project exclude paths
+/.gradle/
+/app/build/
+/app/build/intermediates/classes/debug/
+/Common/build/
+/Common/build/intermediates/classes/debug/
+/WheelPicker/build/
+/WheelPicker/build/intermediates/classes/debug/

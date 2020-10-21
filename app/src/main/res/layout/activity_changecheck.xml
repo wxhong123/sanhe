@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.acc.common.widget.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title_bar_color"></com.acc.common.widget.TitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_changecheck1" />
+
+                <TextView
+                    style="@style/tvStyle_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:text="拍照核查"
+                    android:textColor="@color/title_bar_color" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_changecheck2" />
+
+                <TextView
+                    style="@style/tvStyle_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:text="手动读卡核查"
+                    android:textColor="@color/title_bar_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_changecheck3" />
+
+                <TextView
+                    style="@style/tvStyle_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:text="自动读卡核查"
+                    android:textColor="@color/title_bar_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/ckb1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:button="@drawable/ckb_btn"
+                android:text="拍照核查"
+                android:textColor="@color/tv_black" />
+
+            <RadioButton
+                android:id="@+id/ckb2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:button="@drawable/ckb_btn"
+                android:text="手动进行读卡核查"
+                android:textColor="@color/tv_gray" />
+
+            <RadioButton
+                android:id="@+id/ckb3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:button="@drawable/ckb_btn"
+                android:text="手动进行读卡核查"
+                android:textColor="@color/tv_gray" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_dianchi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_changecheck4" />
+
+                <TextView
+                    style="@style/tvStyle_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:text="快速(0.2)"
+                    android:textColor="@color/title_bar_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_changecheck5" />
+
+                <TextView
+                    style="@style/tvStyle_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:text="一般(0.5)"
+                    android:textColor="@color/title_bar_color" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_changecheck6" />
+
+                <TextView
+                    style="@style/tvStyle_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp_10"
+                    android:text="慢速(1)"
+                    android:textColor="@color/title_bar_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/ckb4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:button="@drawable/ckb_btn"
+                android:text="耗电极高"
+                android:textColor="@color/tv_gray" />
+
+            <RadioButton
+                android:id="@+id/ckb5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:button="@drawable/ckb_btn"
+                android:text="耗电高"
+                android:textColor="@color/tv_gray" />
+
+            <RadioButton
+                android:id="@+id/ckb6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:button="@drawable/ckb_btn"
+                android:text="耗电中"
+                android:textColor="@color/tv_gray" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

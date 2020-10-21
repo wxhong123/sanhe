@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.acc.common.widget.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/title_bar_color"></com.acc.common.widget.TitleBar>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/title_bar_color">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:src="@mipmap/logintext" />-->
+    <!--</RelativeLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            style="@style/tvStyle_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应用简介" />
+
+        <TextView
+            style="@style/tvStyle_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="本产品主要功能是包括人员核查，车辆核查，采集记录。辅助功能包括数据更新，查看培训手册等。初次登录需要补充检查地点与任务类型，否则不能正常使用。" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            style="@style/tvStyle_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应用版本" />
+
+        <TextView
+            android:id="@+id/tv_edition"
+            style="@style/tvStyle_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="v1.0.0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            style="@style/tvStyle_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公司联系方式" />
+
+        <TextView
+            style="@style/tvStyle_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="010-56176200" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_back"
+        style="@style/tvStyle_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp20"
+        android:background="@drawable/btn_bg_orange"
+        android:clickable="true"
+        android:padding="@dimen/dp_10"
+        android:text="返回" />
+
+</LinearLayout>

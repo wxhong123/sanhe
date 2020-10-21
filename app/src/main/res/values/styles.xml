@@ -1,0 +1,69 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+
+    <style name="tvStyle_gray">
+        <item name="android:textColor">@color/tv_gray</item>
+        <item name="android:textSize">@dimen/sp_common</item>
+        <item name="android:gravity">center</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="tvStyle_gray_small">
+        <item name="android:textColor">@color/tv_gray</item>
+        <item name="android:textSize">@dimen/sp_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="tvStyle_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_common</item>
+        <item name="android:gravity">center</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="tvStyle_black">
+        <item name="android:textColor">@color/tv_black</item>
+        <item name="android:textSize">@dimen/sp_common</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tvStyle_black_small">
+        <item name="android:textColor">@color/tv_black</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/sp_small</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 设置完全透明 -->
+      <!--  <item name="android:backgroundDimEnabled">true</item>-->
+        <!-- 设置屏幕变暗 -->
+    </style>
+</resources>

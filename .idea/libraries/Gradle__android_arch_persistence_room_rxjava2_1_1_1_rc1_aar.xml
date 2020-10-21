@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: android.arch.persistence.room:rxjava2:1.1.1-rc1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rxjava2-1.1.1-rc1.aar/67d157744271dcdff26e8b3222e5920e/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6dc0938a0e84c9c334b8c59b84be56a0/rxjava2-1.1.1-rc1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b6058e4ea30c6f76c3d27950176095e8/rxjava2-1.1.1-rc1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/87b9492ff6b622127ec31a84b4f6f894/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/87b9492ff6b622127ec31a84b4f6f894/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/87b9492ff6b622127ec31a84b4f6f894/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/android.arch.persistence.room/rxjava2/1.1.1-rc1/30be6db010126a6f2f5547fc854d479f3e22ac6b/rxjava2-1.1.1-rc1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
